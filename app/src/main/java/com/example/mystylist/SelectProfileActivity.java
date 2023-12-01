@@ -18,8 +18,6 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mystylist.closet_activity.ClosetSwipeToDeleteCallback;
-import com.example.mystylist.structures.Item;
 import com.example.mystylist.structures.Profile;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -70,7 +68,7 @@ public class SelectProfileActivity extends AppCompatActivity {
                 String name = profileName.getText().toString();
                 Profile profile = new Profile(name);
 
-                if (!profile.hasValidName()) {
+                if (!profile.isValid()) {
                     Snackbar snackbar = Snackbar.make(view, "Profile name cannot be empty.", Snackbar.LENGTH_SHORT);
                     snackbar.show();
                 }

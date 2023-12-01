@@ -1,8 +1,6 @@
 package com.example.mystylist;
 
-import android.app.AlertDialog;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -10,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -23,13 +20,10 @@ import com.example.mystylist.enums.EColor;
 import com.example.mystylist.enums.EItemType;
 import com.example.mystylist.structures.Item;
 import com.example.mystylist.structures.Profile;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Function;
 
 public class AccountActivity extends AppCompatActivity {

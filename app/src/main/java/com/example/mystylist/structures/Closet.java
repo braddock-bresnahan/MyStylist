@@ -1,7 +1,5 @@
 package com.example.mystylist.structures;
 
-import android.util.Log;
-
 import com.example.mystylist.enums.EColor;
 import com.example.mystylist.enums.EItemType;
 
@@ -11,25 +9,15 @@ import java.util.List;
 
 @SuppressWarnings("unused")
 public class Closet implements Serializable {
-    private final Profile parent;
-    private ArrayList<Item> items;
+    private ArrayList<Item> items = new ArrayList<>();
 
-    public Closet(Profile parent){
-        this.parent = parent;
-        this.items = new ArrayList<>();
-    }
-
-    public Profile getParent() {
-        return this.parent;
-    }
+    public Closet() {}
 
     public List<Item> getItems() {
         return this.items;
     }
-
-    public Closet setItems(ArrayList<Item> items) {
+    public void setItems(ArrayList<Item> items) {
         this.items = items;
-        return this;
     }
 
     public int getItemCount() {
@@ -74,18 +62,5 @@ public class Closet implements Serializable {
 
     public Item getItemAt(int index) {
         return this.items.get(index);
-    }
-
-    public static Closet generateDemoCloset() {
-        Closet closet = new Closet(null);
-        closet = new Closet(null);
-        closet.addItem(new Item(EItemType.T_SHIRT, EColor.BLACK));
-        closet.addItem(new Item(EItemType.BLOUSE, EColor.WHITE));
-        closet.addItem(new Item(EItemType.COAT, EColor.BROWN));
-        closet.addItem(new Item(EItemType.DRESS, EColor.BEIGE));
-        closet.addItem(new Item(EItemType.HEELS, EColor.GREEN));
-        closet.addItem(new Item(EItemType.LONG_SLEEVE_SHIRT, EColor.GREY));
-        closet.addItem(new Item(EItemType.LOAFERS, EColor.DARK_BLUE));
-        return closet;
     }
 }

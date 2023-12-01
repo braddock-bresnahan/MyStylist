@@ -24,25 +24,22 @@ public class Item implements Serializable, Comparable<Item> {
     public int getDrawableId() {
         return drawable_id;
     }
-    public Item setDrawableId(int drawableId) {
+    public void setDrawableId(int drawableId) {
         this.drawable_id = drawableId;
-        return this;
     }
 
     public EItemType getType() {
         return type;
     }
-    public Item setType(EItemType type) {
+    public void setType(EItemType type) {
         this.type = type;
-        return this;
     }
 
     public EColor getColor() {
         return color;
     }
-    public Item setColor(EColor color) {
+    public void setColor(EColor color) {
         this.color = color;
-        return this;
     }
 
     @NonNull

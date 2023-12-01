@@ -58,7 +58,7 @@ public class ClosetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_closet);
         layout = findViewById(R.id.constraintLayout);
 
-        closet = new Closet(null);
+        closet = new Closet();
         Database.getItemsFromCloset(LoginActivity.activeAccount.getUsername(), AccountActivity.profileName, new Function<Item, Void>() {
             @Override
             public Void apply(Item item) {
