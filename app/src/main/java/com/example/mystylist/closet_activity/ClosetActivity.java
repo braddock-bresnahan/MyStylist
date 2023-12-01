@@ -52,6 +52,8 @@ public class ClosetActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Test Change
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_closet);
         layout = findViewById(R.id.constraintLayout);
