@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkboxCasual"
+                android:layout_width="104dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Casual"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="@+id/guideline50"
+                app:layout_constraintTop_toBottomOf="@+id/style_category_label" />
+
+            <CheckBox
+                android:id="@+id/checkboxSmartCasual"
+                android:layout_width="107dp"
+                android:layout_height="48dp"
+                android:text="Smart Casual"
+                app:layout_constraintStart_toStartOf="@+id/checkboxCasual"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxCasual" />
+
+            <CheckBox
+                android:id="@+id/checkboxBusinessCasual"
+                android:layout_width="109dp"
+                android:layout_height="48dp"
+                android:text="Business Casual"
+                app:layout_constraintStart_toStartOf="@+id/checkboxSmartCasual"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxSmartCasual" />
+
+            <CheckBox
+                android:id="@+id/checkboxBusinessProfessional"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:text="Business Professional"
+                app:layout_constraintStart_toStartOf="@+id/checkboxBusinessCasual"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxBusinessCasual" />
+
+            <CheckBox
+                android:id="@+id/checkboxSemiFormal"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:text="Semi-Formal"
+                app:layout_constraintStart_toStartOf="@+id/checkboxBusinessProfessional"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxBusinessProfessional" />
+
+            <CheckBox
+                android:id="@+id/checkboxFormal"
+                android:layout_width="111dp"
+                android:layout_height="48dp"
+                android:text="Formal"
+                app:layout_constraintStart_toStartOf="@+id/checkboxSemiFormal"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxSemiFormal" />
+
+            <CheckBox
+                android:id="@+id/checkboxNeutral"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Neutral"
+                app:layout_constraintEnd_toStartOf="@+id/guideline50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_category_label" />
+
+            <CheckBox
+                android:id="@+id/checkboxMasculine"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Masculine"
+                app:layout_constraintStart_toStartOf="@+id/checkboxNeutral"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxNeutral" />
+
+            <CheckBox
+                android:id="@+id/checkboxFeminine"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Feminine"
+                app:layout_constraintStart_toStartOf="@+id/checkboxMasculine"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxMasculine" />
+
+            <CheckBox
+                android:id="@+id/checkboxSpring"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Spring"
+                app:layout_constraintEnd_toStartOf="@+id/guideline50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/season_category_label" />
+
+            <CheckBox
+                android:id="@+id/checkboxSummer"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Summer"
+                app:layout_constraintStart_toStartOf="@+id/checkboxSpring"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxSpring" />
+
+            <CheckBox
+                android:id="@+id/checkboxFall"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Fall"
+                app:layout_constraintStart_toStartOf="@+id/checkboxWinter"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxWinter" />
+
+            <CheckBox
+                android:id="@+id/checkboxWinter"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Winter"
+                app:layout_constraintStart_toStartOf="@+id/checkboxSummer"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxSummer" />
+
+            <CheckBox
+                android:id="@+id/checkboxFair"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Fair"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline50"
+                app:layout_constraintTop_toBottomOf="@+id/weather_category_label" />
+
+            <CheckBox
+                android:id="@+id/checkboxCold"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Cold"
+                app:layout_constraintStart_toStartOf="@+id/checkboxHot"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxHot" />
+
+            <CheckBox
+                android:id="@+id/checkboxHot"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Hot"
+                app:layout_constraintStart_toStartOf="@+id/checkboxFair"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxFair" />
+
+            <CheckBox
+                android:id="@+id/checkboxRainy"
+                android:layout_width="114dp"
+                android:layout_height="48dp"
+                android:text="Rainy"
+                app:layout_constraintStart_toStartOf="@+id/checkboxCold"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxCold" />
+
+            <Button
+                android:id="@+id/btnApplySelections2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Apply Selections"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxFormal" />
+
+            <TextView
+                android:id="@+id/gender_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Gender"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/checkboxNeutral"
+                app:layout_constraintStart_toStartOf="@+id/checkboxNeutral"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/season_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Season"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/checkboxSpring"
+                app:layout_constraintStart_toStartOf="@+id/checkboxSpring"
+                app:layout_constraintTop_toTopOf="@+id/style_category_label" />
+
+            <TextView
+                android:id="@+id/weather_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Weather"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/checkboxFair"
+                app:layout_constraintStart_toStartOf="@+id/checkboxFair"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/style_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Style"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/checkboxCasual"
+                app:layout_constraintStart_toStartOf="@+id/checkboxCasual"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxRainy" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
